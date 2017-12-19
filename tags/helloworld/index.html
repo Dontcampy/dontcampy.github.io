@@ -556,6 +556,30 @@
 
 
 
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    
+        <script type="text/javascript">
+            function showGitment(){
+                document.getElementById("gitment-display-button").style.display = "none";
+                document.getElementById("gitment-container").style.display = "block";
+                var gitment = new Gitment({
+                        id: window.location.pathname, 
+                        owner: 'Dontcampy',
+                        repo: 'dontcampy.github.io',
+                        oauth: {
+                            client_id: '88482e3fab04ea9e8f3d',
+                            client_secret: '868f366fc06f9fcec70f2f241ca0cc46694872fc',
+                        }});
+                gitment.render('gitment-container');
+            }
+        </script>
+    
+
   
 
 
